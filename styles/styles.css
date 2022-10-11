@@ -1,0 +1,356 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Segoe UI';
+    font-size: 1.8rem;
+    margin: 10px;
+}
+
+.page-header {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin: 0px 80px;
+}
+
+/* Navbar styling */
+
+.nav-dim {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    display: inline;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 20px 35px 10px 10px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #bf7631;
+  }
+  
+  .active {
+    background-color: #ffffff;
+  }
+
+/* Navbar Cara Logo */
+
+.Navbar-cara-logo {
+  display: flex;
+  width: 33%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Search Bar */
+
+.search-dim {
+  display: flex;
+  width: 33%;
+  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-dim-center {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  background-color: #FFFFFF;
+  background-image: url("../assets/1200px-Google_Magnifying_Glass.svg.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 3px;
+  margin-right: -150px;
+}
+
+/* HR BARS */
+
+.nav-hr{
+  display: block;
+  background-color: black;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 4px;
+}
+
+.section-hr{
+  display: block;
+  background-color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  height: 4px;
+}
+
+.products-hr{
+  display: block;
+  background-color: black;
+  margin-top: -45px;
+  margin-bottom: 20px;
+  width: 13%;
+  height: 4px;
+}
+
+/* Header Image */
+
+.header-img {
+  background: linear-gradient(to right,
+  rgb(0, 0, 0, 1),
+  rgb(0, 0, 0, 1), 
+  rgba(0, 0, 0, 0), 
+  rgba(0, 0, 0, 0), 
+  rgb(0, 0, 0, 1),
+  rgb(0, 0, 0, 1)),
+  url("../assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 60vh;
+  width: 100%
+  }
+
+.left-text {
+  color: #FFFFFF;
+  font-size: 3rem;
+  position: absolute;
+  top: 155px;
+  left: 80px;
+}
+
+.right-text {
+  color: #FFFFFF;
+  font-size: 3rem;
+  position: absolute;
+  top: 550px;
+  right: 80px;
+}
+
+/* About US */
+
+.about-header {
+	font-size: 32px;
+	letter-spacing: 4px;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.about-imgs-1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-imgs-2 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.img-text {
+  padding: 0px 10px;
+}
+
+.img-text-2 {
+  padding: 100px 10px;
+}
+
+.img-1 {
+  height: 400px;
+  object-fit: contain;
+}
+
+.img-2 {
+  height: 500px;
+  object-fit: contain;
+  transform: scaleX(-1);
+  position: relative;
+  z-index:-1;
+}
+
+/* Products Section */
+
+.products-header {
+	font-size: 32px;
+	letter-spacing: 4px;
+}
+
+.products-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.products-grid {
+	display: grid;
+	justify-content: space-between;
+	grid-template-columns: auto auto auto;
+	gap: 192px 240px;
+}
+
+.product-dim {
+	display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  width: 400px;
+  padding-bottom: 20px;
+}
+
+.product-dim-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-img {
+  width: 440px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.product-desc {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin: 8px 0px;
+	padding: 16px 0px;
+	position: relative;
+	font-size: 22.4px;
+}
+
+.product-name {
+  font-size: 25px;
+}
+
+.product-link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.learn-more-text {
+  color: #BF7631;
+  text-decoration: underline;
+}
+
+.cart-button {
+	background-color: #bf7631;
+
+	color: #ffffff;
+	
+}
+
+/* Contact Section */
+
+.contact-header {
+	font-size: 32px;
+	letter-spacing: 4px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.contact-dim {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.contact-text {
+  margin-top: 3.5px;
+}
+
+#message-box {
+	height: 160px;
+}
+
+.send-button {
+  color:#ffffff;
+  background-color: #BF7631;
+	margin: 48px 0px 0px 0px;
+	align-self: flex-end;
+  padding: 10px 30px
+}
+
+/* Footer Section */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #bf7631;
+  padding: 25px 0px;
+}
+
+.social-media {
+	display: flex;
+	align-items:flex-end;
+	justify-content: space-evenly;
+}
+
+.social-icons {
+	height: 80px;
+}
+
+.social-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo-img {
+  height: 40px;
+  object-fit: contain;
+}
+
